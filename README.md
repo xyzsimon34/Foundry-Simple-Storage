@@ -1,70 +1,34 @@
-<<<<<<< HEAD
-## Foundry
+# Foundry Simple Storage
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+This project demonstrates a basic smart contract for storing and retrieving values on the Ethereum blockchain using the Foundry framework.
 
-Foundry consists of:
+## Overview
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+The Simple Storage contract allows you to:
 
-## Documentation
+- Store a single `uint256` value.
+- Retrieve the stored value.
 
-https://book.getfoundry.sh/
+This project is structured to help developers understand how to work with smart contracts and the Foundry toolset, while also serving as a foundation for more complex Ethereum-based applications.
 
-## Usage
+## Features
 
-### Build
+- **Smart Contract:** A Solidity contract that stores and retrieves a value.
+- **Unit Testing:** Includes unit tests to ensure the correct behavior of the contract.
+- **Gas Reporting:** Analyze gas usage for storage and retrieval operations.
+- **Deployment:** Scripts for deploying the contract to Ethereum test networks.
 
-```shell
-$ forge build
-```
+## Prerequisites
 
-### Test
+To use this project, you'll need to have the following installed:
 
-```shell
-$ forge test
-```
+- [Foundry](https://book.getfoundry.sh/) – A blazing fast Ethereum development framework.
+- [Node.js](https://nodejs.org/) – For scripting and additional tooling (if needed).
 
-### Format
+## Getting Started
 
-```shell
-$ forge fmt
-```
+1. **Clone the repository:**
 
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
-=======
-# Foundry-Simple-Storage
->>>>>>> origin/master
+   ```bash
+   git clone https://github.com/xyzsimon34/Foundry-Simple-Storage.git
+   cd Foundry-Simple-Storage
